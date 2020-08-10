@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 
 import django_on_heroku
-import os
+# import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -139,6 +139,6 @@ EMAIL_HOST_PASSWORD = 'Pizza2000'
 EMAIL_PORT = 587
 django_on_heroku.settings(locals())
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "main_app/static")
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "main_app/static")
+# ]
